@@ -4,7 +4,7 @@ from torch import nn
 import pandas as pd
 
 # importing dataset
-df = pd.read_csv("data/loan_data.csv")
+df = pd.read_csv("loan_data.csv")
 df = df[["loan_status", "person_income", "loan_intent", "loan_percent_income"]]
 
 # one-hot encodding the object type column
